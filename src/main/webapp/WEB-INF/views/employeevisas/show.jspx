@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    
+
+<page:show id="ps_org_timedesk_entity_EmployeeVisa" object="${employeevisa}" path="/employeevisas" z="HKN/ro5TL9aQlPguueIibIPvrS0=">
+        <field:display field="employee" id="s_org_timedesk_entity_EmployeeVisa_employee" object="${employeevisa}" z="A5D2xL8I4HPZ/XWtXQhogr363Jw="/>
+        <field:display field="visaId" id="s_org_timedesk_entity_EmployeeVisa_visaId" object="${employeevisa}" z="/UYMH2BgZc44ae5/quQXQM44ZLA="/>
+        <field:display date="true" dateTimePattern="${employeeVisa_validfrom_date_format}" field="validFrom" id="s_org_timedesk_entity_EmployeeVisa_validFrom" object="${employeevisa}" z="VZLTBU3Fb87d6G65rNueaeco7hs="/>
+        <field:display date="true" dateTimePattern="${employeeVisa_validto_date_format}" field="validTo" id="s_org_timedesk_entity_EmployeeVisa_validTo" object="${employeevisa}" z="gms7/M3pUFcR8aZ6JVwR7KkSEG0="/>
+        <field:display field="country" id="s_org_timedesk_entity_EmployeeVisa_country" object="${employeevisa}" z="miBbEZWGkQU+0V6tsj1GHK4pGak="/>
+    </page:show>
+</div>

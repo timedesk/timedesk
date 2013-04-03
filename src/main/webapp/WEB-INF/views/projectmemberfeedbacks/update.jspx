@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_ProjectMemberFeedback" modelAttribute="projectMemberFeedback" path="/projectmemberfeedbacks" z="2FZyDwcW0sA4DNj7/hkFegr1eWA=">
+        <field:select field="projectMember" id="c_org_timedesk_entity_ProjectMemberFeedback_projectMember" itemValue="id" items="${projectmembers}" path="/projectmembers" required="true" z="bVb/RyOFmkBHWUZjhnjfXe0jZ/g="/>
+        <field:input field="feedbackId" id="c_org_timedesk_entity_ProjectMemberFeedback_feedbackId" required="true" validationMessageCode="field_invalid_integer" z="7kNTfIVN0/eHXdBG2QAAjFaqD7g="/>
+        <field:input field="description" id="c_org_timedesk_entity_ProjectMemberFeedback_description" z="r/Awo01CLHjbjTPa+ty8d38s3Qs="/>
+    </form:update>
+</div>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_ProjectPhase" items="${projectphases}" z="LU+V0uXQpTf3YZwUAjBn+L4ED2c=">
+        <table:table data="${projectphases}" id="l_org_timedesk_entity_ProjectPhase" path="/projectphases" z="ds/aPEHMeCxgqwo9ZJRr+Hb2N5Q=">
+            <table:column id="c_org_timedesk_entity_ProjectPhase_project" property="project" render="true" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_phaseId" property="phaseId" z="OmKNjJU3Jh2uCwJP+ROE5Q9x7Xw="/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_description" property="description" maxLength="200" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_startDate" property="startDate" z="F3LA8gQT0jvAtFRJchxgtekO0JE="/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_endDate" property="endDate" z="szxiu3urGIlkPtEFRRaJmbVg5GY="/>      	
+        	<table:column id="c_org_timedesk_entity_ProjectPhase_projectPhaseMembers" property="projectPhaseMembers" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

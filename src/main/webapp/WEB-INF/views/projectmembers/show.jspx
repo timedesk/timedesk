@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_ProjectMember" object="${projectmember}" path="/projectmembers" z="y2wM6o01eHWZVTZNTDcwe5ZrkJ4=">
+    <a href="/timedesk/projects/${projectmember.project.id}"><field:display field="project" id="s_org_timedesk_entity_ProjectMember_project" object="${projectmember}" z="4PuPIYdm0GgD2EeTnr33gXYLLgg="/></a>        
+        <field:display field="memberId" id="s_org_timedesk_entity_ProjectMember_memberId" object="${projectmember}" z="R6l5ATUi7VKkN8hVwkWNZB5sHS8="/>
+        <field:display field="employee" id="s_org_timedesk_entity_ProjectMember_employee" object="${projectmember}" z="zmPZx5dDsqK5Z2qsXyjdNC8D/Os="/>
+        <field:display field="feedbacks" id="s_org_timedesk_entity_ProjectMember_feedbacks" object="${projectmember}" z="user-managed" render="false"/>    
+    	<field:display field="roles" id="s_org_timedesk_entity_ProjectMember_roles" object="${projectmember}" z="user-managed" render="false"/>
+     
+        <p class="data-grid-label">Member Roles:</p>
+        <table class="data-grid">
+		  <tr>
+		   <th>ID</th>
+		   <th>Member Role</th>
+		  </tr>
+		  <c:forEach items="${projectmember.roles}" var="role" varStatus="row">
+		    <tr>
+		      <td>${role.id}</td>
+		      <td>${role.name}</td>
+		    </tr>
+		  </c:forEach>
+		</table>
+	</page:show>        
+</div>

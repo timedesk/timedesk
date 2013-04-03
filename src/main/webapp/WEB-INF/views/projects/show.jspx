@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_Project" object="${project}" path="/projects" z="f8z6YSdrWYjZkgmoNICWLU//r60=">        
+        <field:display field="projectId" id="s_org_timedesk_entity_Project_projectId" object="${project}" z="E1/fkHXeMcqXXIXtTLpFED3e3+s="/>
+        <field:display field="name" id="s_org_timedesk_entity_Project_name" object="${project}" z="oT6QqafuPTcXYGkZtDqB6oFDiw4="/>
+        <field:display field="description" id="s_org_timedesk_entity_Project_description" object="${project}" z="PiZA/nf+ZDza42v3uUbrRU2dRvY="/>
+        <field:display date="true" dateTimePattern="${project_startdate_date_format}" field="startDate" id="s_org_timedesk_entity_Project_startDate" object="${project}" z="Bepl4r2HUDnglgXv8nNGzlJ2rQ8="/>
+        <field:display date="true" dateTimePattern="${project_enddate_date_format}" field="endDate" id="s_org_timedesk_entity_Project_endDate" object="${project}" z="8DYLvPcH8Z0LdQnhthEfDshLI2M="/>        
+        <field:display field="projectMembers" id="s_org_timedesk_entity_Project_projectMembers" object="${project}" render="false" z="user-managed"/>
+        <field:display field="projectPhases" id="s_org_timedesk_entity_Project_projectPhases" object="${project}" render="false" z="user-managed"/>
+        <field:display field="company" id="s_org_timedesk_entity_Project_company" object="${project}" render="false" z="user-managed"/>
+        
+        <p class="data-grid-label">Project Members:</p>
+        <table:table data="${project.projectMembers}" id="l_org_timedesk_entity_ProjectMember" path="/projectmembers" z="user-managed">
+        	<table:column id="c_org_timedesk_entity_ProjectMember_memberId" property="memberId" z="user-managed"/>                                         
+        	<table:column id="c_org_timedesk_entity_ProjectMember_employee" maxLength="100" property="employee" z="user-managed"/>
+        </table:table>
+		
+		<p class="data-grid-label">Project Phases:</p>
+        <table:table data="${project.projectPhases}" id="l_org_timedesk_entity_ProjectPhase" path="/projectphases" z="user-managed">
+            <table:column id="c_org_timedesk_entity_ProjectPhase_phaseId" property="phaseId" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_description" property="description" maxLength="200" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_startDate" property="startDate" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ProjectPhase_endDate" property="endDate" z="user-managed"/>
+        </table:table>    
+    </page:show>
+</div>

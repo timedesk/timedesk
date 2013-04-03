@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+  <jsp:output omit-xml-declaration="yes"/>
+  <spring:message code="label_help_index" var="title"/>
+  <util:panel id="title" title="${title}">
+    <spring:message code="application_name" var="app_name"/>
+    <h3>Online Help</h3>
+    <a name='1'>Help</a>
+    <h3>TOC</h3>
+    <ol>
+		<li><a href='#2'>Company</a> </li>
+		<li><a href='#3'>Employees</a> </li>
+		<li><a href='#4'>Leave Information</a> </li>
+	</ol> 
+    <a name='2'>Company</a>
+    <p><span>Company Information section allows user to handle company related information. Mainly four functionalities are facilitated under this category.</span></p>
+     <dl>
+		<dt>Create new Company</dt>
+			<dd>User can create a company by providing values for Company ID and Name.</dd>
+		<dt>List all Companies</dt>
+			<dd>User can view a list of companies. There are three icons provided to view sites connected to the company record, edit company record, and delete company record. Below the list of companies, an icon is provided to create a new company.</dd>
+	 	<dt>Create new  Company Sites</dt>
+			<dd>Allows user to create company sites. Existing companies will be listed in a drop down menu where user has to select a value for Company ID. In addition values should be entered for Site ID, Location, City and Country.</dd>
+	 	<dt>List all Company Sites</dt>
+			<dd>Allows user to view all company sites. There are three icons provided to view employees connected to the company site record, edit company site record, and delete company site record. Below the list of company sites, an icon is provided to create a new company site.</dd>
+	 	
+	 </dl>
+	 <a name='3'>Employees</a>
+     <p><span>Employee Information section allows user to handle employee related information. Mainly four functionalities are facilitated under this category.</span></p>
+     <dl>
+		<dt>Create new Employee</dt>
+			<dd>Allows user to create a new employee by entering information of the employee. Employees are connected to the company sites. So when creating the employee, company site should be selected from a drop down menu. In addition employee should be connected to an existing user. It is possible to save multiple employee skills, employee roles, and pre employee roles for an employee.</dd>
+		<dt>List all Employees</dt>
+			<dd>Allows user to view list of all employees. There are three icons provided to view detailed information of the employee, edit employee record, and delete employee record. Below the list of employees, an icon is provided to create a new employee.</dd>
+	 	<dt>Create new Employee Visa</dt>
+			<dd>Allows user to create employee visa records. Employee ID should be selected from a drop down menu and values should be provided for Visa ID, Valid From, Valid To, and Country fields. A calendar will popup when clicks on Valid From, and Valid To fields which allows user to select the specific date from the calendar.</dd>
+	 	<dt>List all Employee Visas</dt>
+			<dd>Allows user to view list of visa records. There are three icons provided to view detailed information of the visa record, edit visa record, and delete visa record. Below the list of visa records, an icon is provided to create a new visa record.</dd>
+	 	
+	 </dl>
+	 
+	 <a name='4'>Leave Information</a>
+     <p><span>Leave Information section allows user to handle employee leave related information. Mainly two functionalities are facilitated under this category.</span></p>
+     <dl>
+		<dt>Create new Employee Leave</dt>
+			<dd>Allows user to insert employee leave records. It is required to select Employee from drop down menu. The From Time and To Time should be given. A calendar will popup when clicks on From Time and To Time fields which allows user to select the specific date and time from the calendar.</dd>
+		<dt>List all Employee Leaves</dt>
+			<dd>Allows user to view list of employee leave records. There are three icons provided to view detailed information of the employee leave record, edit employee leave record, and delete employee leave record. Below the list of employee leave records, an icon is provided to create a new record.</dd>
+	 	
+	 </dl>
+  </util:panel>
+</div>

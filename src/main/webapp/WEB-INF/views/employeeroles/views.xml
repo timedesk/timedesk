@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN" "http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+    <definition extends="default" name="employeeroles/list">
+        <put-attribute name="body" value="/WEB-INF/views/employeeroles/list.jspx"/>
+    </definition>
+<definition extends="default" name="employeeroles/show">
+        <put-attribute name="body" value="/WEB-INF/views/employeeroles/show.jspx"/>
+    </definition>
+<definition extends="default" name="employeeroles/create">
+        <put-attribute name="body" value="/WEB-INF/views/employeeroles/create.jspx"/>
+    </definition>
+<definition extends="default" name="employeeroles/update">
+        <put-attribute name="body" value="/WEB-INF/views/employeeroles/update.jspx"/>
+    </definition>
+</tiles-definitions>

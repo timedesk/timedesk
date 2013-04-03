@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_SecurityRole" modelAttribute="securityRole" path="/securityroles" z="GHWbrI094bpxxie5Mo1z95F3zSk=">
+        <field:input field="securityRoleId" id="c_org_timedesk_entity_SecurityRole_securityRoleId" required="true" z="/lg/KGhesNPnLCLgbCtQvxshbAg="/>
+        <field:input field="name" id="c_org_timedesk_entity_SecurityRole_name" required="true" z="m96idocA9RON8kglgDpURQtUEZ4="/>
+        
+    <field:select field="applicationFeatures" id="c_org_timedesk_entity_SecurityRole_applicationFeatures" itemValue="id" items="${applicationfeatures}" multiple="true" path="/applicationfeatures" z="dNXVLFevIS7F+ailzunjtGx/LCo="/>
+    </form:update>
+</div>

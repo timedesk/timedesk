@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    
+
+<page:list id="pl_org_timedesk_entity_EmployeeLeave" items="${employeeleaves}" z="HfdNsLrsl8r/sik9tUhipbn5ttQ=">
+        <table:table data="${employeeleaves}" id="l_org_timedesk_entity_EmployeeLeave" path="/employeeleaves" z="nOpt8UEnhSFuNb7CCg+hXUhSVS8=">
+            <table:column id="c_org_timedesk_entity_EmployeeLeave_employee" property="employee" z="HbW3pWx+ErmpZHhCRMg7Y20dCHU="/>
+            <table:column id="c_org_timedesk_entity_EmployeeLeave_fromTime" property="fromTime" z="olwmIVd9znlUxDleHG62aIjLD7k="/>
+            <table:column id="c_org_timedesk_entity_EmployeeLeave_toTime" property="toTime" z="ZGXeRw7Jc4SdQf3TzILR5FqH9kk="/>
+        </table:table>
+    </page:list>
+</div>

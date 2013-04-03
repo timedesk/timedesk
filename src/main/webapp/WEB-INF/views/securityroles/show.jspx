@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_SecurityRole" object="${securityrole}" path="/securityroles" z="5NL4EAa8Kstu3Uu2RPyxYkq45rE=">
+        <field:display field="securityRoleId" id="s_org_timedesk_entity_SecurityRole_securityRoleId" object="${securityrole}" z="hyfuWgo4iziQnhEa4PKRG4D+/hM="/>
+        <field:display field="name" id="s_org_timedesk_entity_SecurityRole_name" object="${securityrole}" z="eVOrc7v4dEPQycuTy7Tpxriv35g="/>
+        <field:display field="applicationFeatures" id="s_org_timedesk_entity_SecurityRole_applicationFeatures" object="${securityrole}" render="false" z="user-managed"/>
+    	
+    	<table:table create="false" delete="false" update="false" data="${securityrole.applicationFeatures}" id="l_org_timedesk_entity_ApplicationFeature" path="/applicationfeatures" z="user-managed">
+            <table:column id="c_org_timedesk_entity_ApplicationFeature_featureId" property="featureId" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ApplicationFeature_name" property="name" maxLength="100" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_ApplicationFeature_description" property="description" maxLength="200" z="user-managed"/>
+        </table:table>
+        <br />
+    </page:show>
+</div>

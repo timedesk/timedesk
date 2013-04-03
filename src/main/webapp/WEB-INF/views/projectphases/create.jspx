@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_timedesk_entity_ProjectPhase" modelAttribute="projectPhase" path="/projectphases" render="${empty dependencies}" z="/4XMrrRQnXjWbWEq85u69j/g+IY=">
+    	<field:select field="project" id="c_org_timedesk_entity_ProjectPhase_project" itemValue="id" items="${projects}" path="/projects" required="true" z="pD4sSeHWCPSLGlw11QAGdGwZMJw="/>
+        <field:input field="phaseId" id="c_org_timedesk_entity_ProjectPhase_phaseId" required="true" z="ts+4gfUtDytS9VdYI93GwlJ0PoI="/>
+        <field:input field="description" id="c_org_timedesk_entity_ProjectPhase_description" z="I6wV8xVxCW5AAEt4PvqQIqVrhZY="/>
+        <field:datetime dateTimePattern="${projectPhase_startdate_date_format}" field="startDate" id="c_org_timedesk_entity_ProjectPhase_startDate" z="DN/scBpq7HZ2mnXaDE9OWBtMVOI="/>
+        <field:datetime dateTimePattern="${projectPhase_enddate_date_format}" field="endDate" id="c_org_timedesk_entity_ProjectPhase_endDate" z="+tx8yqyoT4ZK+OF55tFNnrsmUz8="/>
+    	<field:simple field="projectPhaseMembers" id="c_org_timedesk_entity_ProjectPhase_projectPhaseMembers" messageCode="entity_reference_not_managed" messageCodeAttribute="Project Phase Member" render="false" z="user-managed"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_timedesk_entity_ProjectPhase" render="${not empty dependencies}" z="+QL6ihqVkc+IJuJAOUsqyfL2buA="/>
+</div>

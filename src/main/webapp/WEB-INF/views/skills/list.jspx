@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_Skill" items="${skills}" z="ADTAdoyu4Rg57fMBvMz4N6Aas/U=">
+        <table:table data="${skills}" id="l_org_timedesk_entity_Skill" path="/skills" z="kT4hzPNzZGGzC6xbpLSHYvwJmP8=">
+            <table:column id="c_org_timedesk_entity_Skill_skillId" property="skillId" z="dR7jolWxMvPTSfgCOi1Txp6I0F0="/>
+            <table:column id="c_org_timedesk_entity_Skill_description" property="description" maxLength="200" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_ProjectPhaseMember" modelAttribute="projectPhaseMember" path="/projectphasemembers" z="2xNNUYFqcM7izfCzxHkp3DAyLHc=">
+    	<field:select field="projectPhase" id="c_org_timedesk_entity_ProjectPhaseMember_projectPhase" itemValue="id" items="${projectphases}" path="/projectphases" required="true" z="dzlAIkzHorXlU2NYSo4zmlbOcz8="/>
+    <field:select field="projectMember" id="c_org_timedesk_entity_ProjectPhaseMember_projectMember" itemValue="id" items="${projectmembers}" path="/projectmembers" z="VbWjaAbuwD4Bca5sE1UPYPUDpDE="/>
+        <field:input field="phaseMemberId" id="c_org_timedesk_entity_ProjectPhaseMember_phaseMemberId" required="true" z="Cj3Q/2saxMIgVcq2ktkfoOC9RDA="/>
+        <field:datetime dateTimePattern="${projectPhaseMember_startdate_date_format}" field="startDate" id="c_org_timedesk_entity_ProjectPhaseMember_startDate" required="true" z="q0ZSisKGVipyScQq11w7tU6Tkw4="/>
+        <field:datetime dateTimePattern="${projectPhaseMember_enddate_date_format}" field="endDate" id="c_org_timedesk_entity_ProjectPhaseMember_endDate" required="true" z="UqtmJbS65P/JhOfDvWQ4UGZg64A="/>
+        <field:input field="allocation" id="c_org_timedesk_entity_ProjectPhaseMember_allocation" required="true" validationMessageCode="field_invalid_integer" z="iDUi6xo8ZgsLVvWUUtPLvssQTDM="/>    
+    </form:update>
+</div>

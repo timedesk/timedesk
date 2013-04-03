@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_ProjectPhase" modelAttribute="projectPhase" path="/projectphases" z="XRaKITUmLJW5Dy88CY/Df4oRX3I=">
+        <field:select field="project" id="c_org_timedesk_entity_ProjectPhase_project" itemValue="id" items="${projects}" path="/projects" required="true" z="user-managed"/>
+        <field:input field="phaseId" id="c_org_timedesk_entity_ProjectPhase_phaseId" required="true" z="ts+4gfUtDytS9VdYI93GwlJ0PoI="/>
+        <field:input field="description" id="c_org_timedesk_entity_ProjectPhase_description" z="I6wV8xVxCW5AAEt4PvqQIqVrhZY="/>
+        <field:datetime dateTimePattern="${projectPhase_startdate_date_format}" field="startDate" id="c_org_timedesk_entity_ProjectPhase_startDate" z="DN/scBpq7HZ2mnXaDE9OWBtMVOI="/>
+        <field:datetime dateTimePattern="${projectPhase_enddate_date_format}" field="endDate" id="c_org_timedesk_entity_ProjectPhase_endDate" z="+tx8yqyoT4ZK+OF55tFNnrsmUz8="/>
+    	<field:simple field="projectPhaseMembers" id="c_org_timedesk_entity_ProjectPhase_projectPhaseMembers" messageCode="entity_reference_not_managed" messageCodeAttribute="Project Phase Member" render="false" z="user-managed"/>
+    </form:update>
+</div>

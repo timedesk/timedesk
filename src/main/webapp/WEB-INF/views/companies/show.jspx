@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_Company" object="${company}" path="/companies" z="t4vHTytfe4SZxtY/8RWEMo52INY=">
+        <field:display field="companyId" id="s_org_timedesk_entity_Company_companyId" object="${company}" z="oRi9GO4HInEPcLfnfZKeWWjcGxU="/>
+        <field:display field="name" id="s_org_timedesk_entity_Company_name" object="${company}" z="+FmHSUL9z1dBHyLVUqcvvOQCt5s="/>
+        <field:display field="companySites" id="s_org_timedesk_entity_Company_companySites" object="${company}" render="false" z="user-managed"/>
+        <field:display field="projects" id="s_org_timedesk_entity_Company_projects" object="${company}" render="false" z="user-managed"/>
+        
+        <p class="data-grid-label">Company Sites:</p>
+        <table:table data="${company.companySites}" id="l_org_timedesk_entity_CompanySite" path="/companysites" z="user-managed">
+            <table:column id="c_org_timedesk_entity_CompanySite_company" property="company" render="flase" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_CompanySite_siteId" property="siteId" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_CompanySite_location" property="location" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_CompanySite_city" property="city" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_CompanySite_country" property="country" maxLength="50" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_CompanySite_employees" property="employees" render="false" z="user-managed"/>
+        </table:table>
+        <br/>
+    </page:show>
+</div>

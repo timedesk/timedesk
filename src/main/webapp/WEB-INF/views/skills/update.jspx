@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_Skill" modelAttribute="skill" path="/skills" z="D1Je3F6x2TgtXX4T6X1bqRrRsqE=">
+        <field:input field="skillId" id="c_org_timedesk_entity_Skill_skillId" required="true" z="EaQGcUjjKgOFauvlEb3XiCq6O5Y="/>
+        <field:input field="description" id="c_org_timedesk_entity_Skill_description" required="true" z="fejSPEczvfXItRwr6WMXiDEE0e8="/>
+    </form:update>
+</div>

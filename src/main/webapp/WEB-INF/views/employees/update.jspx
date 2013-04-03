@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_Employee" modelAttribute="employee" path="/employees" z="fiNcuYYABnUHgAKFID0vuzBDcPE=">
+        <field:select field="companySite" id="c_org_timedesk_entity_Employee_companySite" itemValue="id" items="${companysites}" path="/companysites" required="true" z="wsASqvhqvsC0h0B+cXXrkpHvl2I="/>
+        <field:select field="user" id="c_org_timedesk_entity_Employee_user" itemValue="id" items="${users}" path="/users" z="+sFeYpCEkYDfCpq2/MGn+AvGzWQ="/>
+        <field:input field="employeeId" id="c_org_timedesk_entity_Employee_employeeId" required="true" z="UbDLzycm3YwdM3WSR71LfyrO09w="/>        
+        <field:input field="firstName" id="c_org_timedesk_entity_Employee_firstName" z="+6v0dUKEs2+clm11RUA5+oEGPz4="/>
+        <field:input field="lastName" id="c_org_timedesk_entity_Employee_lastName" z="ZMmbr/V/Qhxu2Var+k+twDId+F4="/>
+        <field:input field="email" id="c_org_timedesk_entity_Employee_email" validationMessageCode="field_invalid_email" z="9D9+nveCSTH+j/8326xuLMS2yfA="/>
+        <field:input field="address" id="c_org_timedesk_entity_Employee_address" z="FDfxDwP3vQik578rNbq7Fwioauo="/>
+        <field:input field="city" id="c_org_timedesk_entity_Employee_city" z="dPlnakWwNVhtJDRCtErZ2PoaBA8="/>
+        <field:select field="country" id="c_org_timedesk_entity_Employee_country" items="${countryenums}" path="countryenums" z="lU6BF90ofhKhN9565fu2jNENUsE="/>
+        <field:input field="postCode" id="c_org_timedesk_entity_Employee_postCode" z="a/QbF8e5RxwvRsZqLbbmonlToqg="/>
+        <field:input field="phoneResidence" id="c_org_timedesk_entity_Employee_phoneResidence" z="zboGuKr87uPC+0iiwKaxQxWdF1I="/>
+        <field:input field="phoneMobile" id="c_org_timedesk_entity_Employee_phoneMobile" z="5zYfgzb/8c0QyTUxKIl/R2mPk3I="/>
+        <field:input field="officeExtension" id="c_org_timedesk_entity_Employee_officeExtension" z="YMmNbGXrTN2CJ+CMQntcn1UQj04="/>
+        <field:input field="maxAllocation" id="c_org_timedesk_entity_Employee_maxAllocation" required="true" validationMessageCode="field_invalid_integer" z="user-managed"/>
+        <field:input field="currentAllocation" id="c_org_timedesk_entity_Employee_currentAllocation" validationMessageCode="field_invalid_integer" render="false" z="user-managed"/>
+        <field:select field="employeeSkills" id="c_org_timedesk_entity_Employee_employeeSkills" itemValue="id" items="${skills}" multiple="true" path="/skills" z="3VnCHj6eRCxXVqMKt3flTNXdvKE="/>
+        <field:select field="employeeRoles" id="c_org_timedesk_entity_Employee_employeeRoles" itemValue="id" items="${employeeroles}" multiple="true" path="/employeeroles" z="3iadrAtyPLUJB7DbB+tnD/PVb0o="/>
+        <field:select field="preEmployeeRoles" id="c_org_timedesk_entity_Employee_preEmployeeRoles" itemValue="id" items="${employeeroles}" multiple="true" path="/employeeroles" z="ug64NB81SKiea7Bc2HHUZ7GVyu0="/>
+        <field:simple field="visas" id="c_org_timedesk_entity_Employee_visas" messageCode="entity_reference_not_managed" messageCodeAttribute="Employee Visa" render="false" z="user-managed"/>
+        <field:simple field="leaves" id="c_org_timedesk_entity_Employee_leaves" messageCode="entity_reference_not_managed" messageCodeAttribute="Employee Leave" render="false" z="user-managed"/>
+   
+    </form:update>
+</div>

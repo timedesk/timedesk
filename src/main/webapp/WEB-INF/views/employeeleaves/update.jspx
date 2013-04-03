@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    
+
+<form:update id="fu_org_timedesk_entity_EmployeeLeave" modelAttribute="employeeLeave" path="/employeeleaves" z="1XcYp7kgU1R+joCtHEgYfMD6Z6s=">
+        <field:select field="employee" id="c_org_timedesk_entity_EmployeeLeave_employee" itemValue="id" items="${employees}" path="/employees" required="true" z="G1tN5fvHkfY1eKvGL0O80BL9Fmk="/>
+        <field:datetime dateTimePattern="${employeeLeave_fromtime_date_format}" field="fromTime" id="c_org_timedesk_entity_EmployeeLeave_fromTime" required="true" z="40hPKkWGrpzfUXFycghK36h5Ngk="/>
+        <field:datetime dateTimePattern="${employeeLeave_totime_date_format}" field="toTime" id="c_org_timedesk_entity_EmployeeLeave_toTime" required="true" z="Hca4AXZFgMUFB6tenUBivswyrrY="/>
+    </form:update>
+</div>

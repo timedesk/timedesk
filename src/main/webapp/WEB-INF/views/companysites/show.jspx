@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    
+<page:show id="ps_org_timedesk_entity_CompanySite" object="${companysite}" path="/companysites" z="b76OY01BoAdqygXXgjx6XEs1MSI=">
+        <field:display field="company" id="s_org_timedesk_entity_CompanySite_company" object="${companysite}" z="8iQs3u/hQMrUA9/eyMCxNJt72mo="/>
+        <field:display field="siteId" id="s_org_timedesk_entity_CompanySite_siteId" object="${companysite}" z="+UtH3DIsEUauPK1kuY+v1L53qSE="/>
+        <field:display field="location" id="s_org_timedesk_entity_CompanySite_location" object="${companysite}" z="xGU/59X8ZgO7Esg6pdAfjrH1oOA="/>
+        <field:display field="city" id="s_org_timedesk_entity_CompanySite_city" object="${companysite}" z="kBb9o6qXO0NrKbXkr3ckmuQjQi0="/>
+        <field:display field="country" id="s_org_timedesk_entity_CompanySite_country" object="${companysite}" z="29fV2UwVP0fiDkBWlEr2Sr97gh0="/>
+        <field:display field="employees" id="s_org_timedesk_entity_CompanySite_employees" object="${companysite}" render="false" z="user-managed"/>
+        
+        <p class="data-grid-label">Employees:</p>
+        <table:table data="${companysite.employees}" id="l_org_timedesk_entity_Employee" path="/employees" z="user-managed">
+            <table:column id="c_org_timedesk_entity_Employee_companySite" property="companySite" render="false" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_employeeId" property="employeeId" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_firstName" property="firstName" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_lastName" property="lastName" maxLength="60" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_email" maxLength="50" property="email" z="user-managed"/>            
+        </table:table>
+        <br />
+    </page:show>
+</div>

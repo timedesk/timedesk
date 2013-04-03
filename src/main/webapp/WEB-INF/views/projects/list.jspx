@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_Project" items="${projects}" z="r+3lNDJgMEywfMfsMFouZnTGMqg=">
+        <table:table data="${projects}" id="l_org_timedesk_entity_Project" path="/projects" z="QVC2twZAMUzOCVs35dBRHXVanlk=">            
+            <table:column id="c_org_timedesk_entity_Project_projectId" property="projectId" z="LpwSKkxy4l77OaBDEhZD2hmCaBs="/>
+            <table:column id="c_org_timedesk_entity_Project_name" property="name" maxLength="100" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Project_description" property="description" maxLength="200" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Project_startDate" property="startDate" z="D7zzWsvmzqgSkUhZFCEVAcgEhQM="/>
+            <table:column id="c_org_timedesk_entity_Project_endDate" property="endDate" z="vkAiHisMswhdp5IutKh3JzGz+3Y="/>       
+        	<table:column id="c_org_timedesk_entity_Project_company" property="company" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

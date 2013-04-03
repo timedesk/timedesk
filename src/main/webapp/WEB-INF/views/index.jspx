@@ -1,0 +1,17 @@
+<div xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+  <jsp:output omit-xml-declaration="yes" />  
+  <spring:message var="app_name" code="application_name" />
+  <spring:message var="title" code="welcome_titlepane" arguments="${app_name}" />
+  
+  <util:panel id="title" title="${title}"> 
+  <a href="/timedesk/help/#1"><img src="images/help.png" align="right"/></a><br/> 
+  <img src="images/clock-r1.png"/>
+    <h3>
+      Resource Management made much Simpler!
+    </h3>
+    
+    <p>
+      Time Desk is a Project Resource Management System specially made for managing Software Projects.
+    </p>
+  </util:panel>
+</div>

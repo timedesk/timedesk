@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_ProjectMember" items="${projectmembers}" z="OD6DYHZBrpgNLYsLBDiHyQbA7zk=">
+        <table:table data="${projectmembers}" id="l_org_timedesk_entity_ProjectMember" path="/projectmembers" z="yniSmwfkPTFmZLD7xyXtn/tnoC8=">            
+        	<table:column id="c_org_timedesk_entity_ProjectMember_project" property="project" render="true" z="user-managed"/>
+        	<table:column id="c_org_timedesk_entity_ProjectMember_memberId" property="memberId" z="cl2W837skYTxdu6OcjR/20BGEPs="/>                                         
+        	<table:column id="c_org_timedesk_entity_ProjectMember_employee" maxLength="100" property="employee" z="user-managed"/>            
+        	<table:column id="c_org_timedesk_entity_ProjectMember_feedbacks" property="feedbacks" render="false" z="user-managed"/>        	
+        	<table:column id="c_org_timedesk_entity_ProjectMember_roles" property="roles" render="false" z="user-managed"/>
+        </table:table>
+    </page:list>
+</div>

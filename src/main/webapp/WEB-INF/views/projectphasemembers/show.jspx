@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_ProjectPhaseMember" object="${projectphasemember}" path="/projectphasemembers" z="H+yCLMv+5pFRScqZG+fpA/1VOmI=">
+    	<field:display field="projectPhase" id="s_org_timedesk_entity_ProjectPhaseMember_projectPhase" object="${projectphasemember}" z="RPoQW98HFz0pNEkTmoLYvqWFlQM="/>
+    	<field:display field="projectMember" id="s_org_timedesk_entity_ProjectPhaseMember_projectMember" object="${projectphasemember}" z="6X4qKnhwFwVUmzBCQgbYVMoxd58="/>
+        <field:display field="phaseMemberId" id="s_org_timedesk_entity_ProjectPhaseMember_phaseMemberId" object="${projectphasemember}" z="HQgdYnwfNgIgAc4gJOCMPNnOY5c="/>
+        <field:display date="true" dateTimePattern="${projectPhaseMember_startdate_date_format}" field="startDate" id="s_org_timedesk_entity_ProjectPhaseMember_startDate" object="${projectphasemember}" z="3GtVZhnPlmitV1+lT8bBWA9WnzE="/>
+        <field:display date="true" dateTimePattern="${projectPhaseMember_enddate_date_format}" field="endDate" id="s_org_timedesk_entity_ProjectPhaseMember_endDate" object="${projectphasemember}" z="5owBcvvNM6OmW9TsWAf4Ze84Sdo="/>
+        <field:display field="allocation" id="s_org_timedesk_entity_ProjectPhaseMember_allocation" object="${projectphasemember}" z="wOl3Ovco6mgXa02rTGE7ild6SWs="/>    
+    </page:show>
+</div>

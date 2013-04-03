@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_Employee" object="${employee}" path="/employees" z="eYG6EfdmyMtQVHoTC5Ls/Ie3nVw=">
+        <a href="/timedesk/companysites/${employee.companySite.id}"><field:display field="companySite" id="s_org_timedesk_entity_Employee_companySite" object="${employee}" z="nERgIbR4ujF2dNfHYNB/beBWfxg="/></a>
+        <field:display field="user" id="s_org_timedesk_entity_Employee_user" object="${employee}" z="iFMtZm7fXXjpzO1q4MGVA/RKS9g="/>
+        <field:display field="employeeId" id="s_org_timedesk_entity_Employee_employeeId" object="${employee}" z="CahzlQm8K8k1R/IdQHTsn3fp+u4="/>        
+        <field:display field="firstName" id="s_org_timedesk_entity_Employee_firstName" object="${employee}" z="EFvf7hE4B9iQdxbDEshnQcikbZk="/>
+        <field:display field="lastName" id="s_org_timedesk_entity_Employee_lastName" object="${employee}" z="LXD1G43BqtXWB7rlx6/++NNlT7A="/>
+        <field:display field="email" id="s_org_timedesk_entity_Employee_email" object="${employee}" z="/qf5OHTuoS1tFc839m15bfK3wug="/>
+        <field:display field="address" id="s_org_timedesk_entity_Employee_address" object="${employee}" z="xcb1vVcgonunqMSbPk3OEMgFVnY="/>
+        <field:display field="city" id="s_org_timedesk_entity_Employee_city" object="${employee}" z="979eIEi8g5VepKVAuYNobxbP6gA="/>
+        <field:display field="country" id="s_org_timedesk_entity_Employee_country" object="${employee}" z="L+Iiuii20HI7WrU1NrWuGaUCdvo="/>
+        <field:display field="postCode" id="s_org_timedesk_entity_Employee_postCode" object="${employee}" z="4gS0lgyGlBbZJZXysFxd1PO14hM="/>
+        <field:display field="phoneResidence" id="s_org_timedesk_entity_Employee_phoneResidence" object="${employee}" z="Uwcf7ZTumJY9BG7OKDLOJT3fRxY="/>
+        <field:display field="phoneMobile" id="s_org_timedesk_entity_Employee_phoneMobile" object="${employee}" z="R10n2/B8NnarEz8+8AYneD/LY4s="/>
+        <field:display field="officeExtension" id="s_org_timedesk_entity_Employee_officeExtension" object="${employee}" z="uWAxg2e6SyQUfLCtvs2DP9SvG+Q="/>
+        <field:display field="currentAllocation" id="s_org_timedesk_entity_Employee_currentAllocation" object="${employee}" z="user-managed"/>
+        <field:display field="maxAllocation" id="s_org_timedesk_entity_Employee_maxAllocation" object="${employee}" z="VCsWLMmtWre7QoBdOl0y2Jef4G8="/>
+        <field:display field="employeeSkills" id="s_org_timedesk_entity_Employee_employeeSkills" object="${employee}" render="false" z="user-managed"/>
+        <field:display field="employeeRoles" id="s_org_timedesk_entity_Employee_employeeRoles" object="${employee}" render="false" z="user-managed"/>
+        <field:display field="preEmployeeRoles" id="s_org_timedesk_entity_Employee_preEmployeeRoles" object="${employee}" render="false" z="user-managed"/>
+        <field:display field="visas" id="s_org_timedesk_entity_Employee_visas" object="${employee}" render="false" z="user-managed"/>
+        <field:display field="leaves" id="s_org_timedesk_entity_Employee_leaves" object="${employee}" render="false" z="user-managed"/>
+        
+        <p class="data-grid-label">Employee Skills:</p>
+        <table:table create="false" data="${employee.employeeSkills}" delete="false" id="l_org_timedesk_entity_Skill" path="/skills" update="false" z="kT4hzPNzZGGzC6xbpLSHYvwJmP8=">
+            
+            <table:column id="c_org_timedesk_entity_Skill_description" maxLength="200" property="description" z="user-managed"/>
+        </table:table>
+        
+        <p class="data-grid-label">Employee Roles:</p>
+        <table:table create="false" data="${employee.employeeRoles}" delete="false" id="l_org_timedesk_entity_EmployeeRole" path="/employeeroles" update="false" z="hkejVp0dnbZbsmyGvpZLkoLmzlI=">            
+            
+            <table:column id="c_org_timedesk_entity_EmployeeRole_name" maxLength="100" property="name" z="user-managed"/>
+        </table:table>
+        
+        <p class="data-grid-label">Pre Employee Roles:</p>
+        <table:table create="false" data="${employee.preEmployeeRoles}" delete="false" id="l_org_timedesk_entity_EmployeeRole" path="/employeeroles" update="false" z="hkejVp0dnbZbsmyGvpZLkoLmzlI=">            
+            
+            <table:column id="c_org_timedesk_entity_EmployeeRole_name" maxLength="100" property="name" z="user-managed"/>
+        </table:table>   
+    
+    </page:show>
+</div>

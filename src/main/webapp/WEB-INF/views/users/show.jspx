@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_User" object="${user}" path="/users" z="Z2WhvwjgXdWze44ibuLCun32a7w=">
+        <field:display field="username" id="s_org_timedesk_entity_User_username" object="${user}" z="A/YqKrTcHBR0e5BH+CBJ7cIHYsQ="/>
+        <field:display field="password" id="s_org_timedesk_entity_User_password" object="${user}" render="false" z="user-managed"/>
+        <field:display field="enabled" id="s_org_timedesk_entity_User_enabled" object="${user}" z="mLpoKcq7KyIpk4YhpUu/26/e47M="/>
+        <field:display field="securityRoles" id="s_org_timedesk_entity_User_securityRoles" object="${user}" render="false" z="user-managed"/>
+    	<field:display field="employees" id="s_org_timedesk_entity_User_employees" object="${user}" render="false" z="user-managed"/>
+    	    
+    	<p class="data-grid-label">Security Roles:</p>
+        <table:table create="false" data="${user.securityRoles}" delete="false" id="l_org_timedesk_entity_SecurityRole" path="/securityroles" update="false" z="user-managed">
+        	<table:column id="c_org_timedesk_entity_SecurityRole_securityRoleId" property="securityRoleId" z="user-managed"/>            
+            <table:column id="c_org_timedesk_entity_SecurityRole_name" maxLength="100" property="name" z="user-managed"/>        	
+        </table:table>    
+    
+    	<p class="data-grid-label">Employees:</p>
+    	<table:table data="${user.employees}" id="l_org_timedesk_entity_Employee" path="/employees" z="user-managed">
+            <table:column id="c_org_timedesk_entity_Employee_companySite" property="companySite" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_employeeId" property="employeeId" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_user" property="user" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_firstName" property="firstName" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_lastName" property="lastName" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_email" maxLength="60" property="email" z="user-managed"/>
+            <table:column id="c_org_timedesk_entity_Employee_address" property="address" render="false" z="user-managed"/>        
+        </table:table>
+    </page:show>
+</div>

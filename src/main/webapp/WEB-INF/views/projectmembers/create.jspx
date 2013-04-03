@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_timedesk_entity_ProjectMember" modelAttribute="projectMember" path="/projectmembers" render="${empty dependencies}" z="Q2W8Mga2mvl4uMaJF5NkKyKHnJ4=">
+        <field:select field="project" id="c_org_timedesk_entity_ProjectMember_project" itemValue="id" items="${projects}" path="/projects" required="true" z="user-managed"/>
+        <field:input field="memberId" id="c_org_timedesk_entity_ProjectMember_memberId" required="true" z="a21yyrvNfZeEAqvCSDEliGscMaI="/>       
+        <field:select field="employee" id="c_org_timedesk_entity_ProjectMember_employee" itemValue="id" items="${employees}" path="/employees" z="CDudXbFAOtENzUQadQ8wDz3A0M4="/>                
+        <field:simple field="feedbacks" id="c_org_timedesk_entity_ProjectMember_feedbacks" messageCode="entity_reference_not_managed" messageCodeAttribute="Project Member Feedback" render="false" z="user-managed"/>   
+    <field:select field="roles" id="c_org_timedesk_entity_ProjectMember_roles" itemValue="id" items="${projectmemberroles}" multiple="true" path="/projectmemberroles" z="O6rJ8U2gWWqss7yK6M/ph2obTCQ="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_timedesk_entity_ProjectMember" render="${not empty dependencies}" z="h7rM7Y214Qb5BD46ZM8TUNVYfGw="/>
+</div>

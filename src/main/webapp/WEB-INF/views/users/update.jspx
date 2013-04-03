@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_org_timedesk_entity_User" modelAttribute="user" path="/users" z="Cmtuw5c/1CQplwXXiP8MayS4h08=">
+        <field:input field="username" id="c_org_timedesk_entity_User_username" required="true" z="5KBxwAqX5lxbKqj9ZUVwkXTYUYI="/>
+        <field:input field="password" id="c_org_timedesk_entity_User_password" required="true" z="H3At8CG5JV94XoOHmnGDOugRlL0="/>
+        <field:checkbox field="enabled" id="c_org_timedesk_entity_User_enabled" z="kJf+lQ21nYMRUg6ybptqDZXvySk="/>        
+    	<field:select field="securityRoles" id="c_org_timedesk_entity_User_securityRoles" itemValue="id" items="${securityroles}" multiple="true" path="/securityroles" z="cmr6zugrD9mC+Rx84oaUW1gNkro="/>
+    	<field:simple field="employees" id="c_org_timedesk_entity_User_employees" messageCode="entity_reference_not_managed" messageCodeAttribute="Employee" render="false" z="user-managed"/>
+    </form:update>
+</div>

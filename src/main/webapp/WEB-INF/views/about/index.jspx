@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" version="2.0">
+  <jsp:output omit-xml-declaration="yes"/>
+  
+  <spring:message code="label_about_index" var="title"/>
+  <util:panel id="title" title="${title}">
+    <spring:message code="application_name" var="app_name"/>
+    <h3>
+      Time Desk
+    </h3>
+    <p><b>Application Version:</b> Beta 1.0</p>
+    <p><b>Client Implementation:</b> Spring MVC 3.0, Apache Tiles 2.0, Spring Security 3.0</p>
+    <p><b>Application Server:</b> Apache Tomcat 6.0.29</p>
+    <p><b>Database Server:</b> MySQL Community Server 5.5.8</p>
+  </util:panel>
+</div>

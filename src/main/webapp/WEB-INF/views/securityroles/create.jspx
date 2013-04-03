@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_timedesk_entity_SecurityRole" modelAttribute="securityRole" path="/securityroles" render="${empty dependencies}" z="vQsrftGpb/4LtxkT+p5Bbuq/6s0=">
+        <field:input field="securityRoleId" id="c_org_timedesk_entity_SecurityRole_securityRoleId" required="true" z="/lg/KGhesNPnLCLgbCtQvxshbAg="/>
+        <field:input field="name" id="c_org_timedesk_entity_SecurityRole_name" required="true" z="m96idocA9RON8kglgDpURQtUEZ4="/>        
+    	<field:select field="applicationFeatures" id="c_org_timedesk_entity_SecurityRole_applicationFeatures" itemValue="id" items="${applicationfeatures}" multiple="true" path="/applicationfeatures" z="user-managed" render="true"/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_timedesk_entity_SecurityRole" render="${not empty dependencies}" z="F8b6GB8JC0lPse8IwnuqTp19AgE="/>
+</div>

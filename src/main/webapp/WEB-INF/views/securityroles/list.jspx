@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_SecurityRole" items="${securityroles}" z="EfVDsQdGHveROncIKgIGdNH26hA=">
+        <table:table data="${securityroles}" id="l_org_timedesk_entity_SecurityRole" path="/securityroles" z="a2CzzWXNtndpfzPd31tl9GNYbNk=">
+            <table:column id="c_org_timedesk_entity_SecurityRole_securityRoleId" property="securityRoleId" z="lrEUGdCs8r9+pozjhKX04p2p/TQ="/>
+            <table:column id="c_org_timedesk_entity_SecurityRole_name" property="name" maxLength="100" z="user-managed"/>            
+        	<table:column id="c_org_timedesk_entity_SecurityRole_applicationFeatures" property="applicationFeatures" z="user-managed" render="false"/>
+        </table:table>
+    </page:list>
+</div>

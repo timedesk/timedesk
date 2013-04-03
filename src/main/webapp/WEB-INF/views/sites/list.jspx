@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_timedesk_entity_CompanySite" items="${companysites}" z="qAWFiQ/YGBKcCRRefc/DY35ctTM=">
+        <table:table data="${companysites}" id="l_org_timedesk_entity_CompanySite" path="/sites" z="8bv2b7fGiPU8Lblzr3WeWaQqtBw=">
+            <table:column id="c_org_timedesk_entity_CompanySite_company" property="company" z="bUBGw+5JMjjyORl8bK+F5ug6vSY="/>
+            <table:column id="c_org_timedesk_entity_CompanySite_siteId" property="siteId" z="YbgXKRul4jDf08g4qcOF6/Nyljw="/>
+            <table:column id="c_org_timedesk_entity_CompanySite_location" property="location" z="MjEfFiyHLJJy1N5Jlr8yCmvIkzs="/>
+            <table:column id="c_org_timedesk_entity_CompanySite_city" property="city" z="4y9RwZUDfP70Qx1S3U7Oz1hRVbw="/>
+            <table:column id="c_org_timedesk_entity_CompanySite_country" property="country" z="d9XX669N8cZDF4Gx9C5o0wXrCSk="/>
+            <table:column id="c_org_timedesk_entity_CompanySite_employees" property="employees" z="anY31jbymo1F6UgX7dulVbwl0ng="/>
+        </table:table>
+    </page:list>
+</div>

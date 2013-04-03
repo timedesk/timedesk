@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:fn="http://java.sun.com/jsp/jstl/functions" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" xmlns:util="urn:jsptagdir:/WEB-INF/tags/util" id="footer" version="2.0">
+  <jsp:output omit-xml-declaration="yes"/>
+
+  <spring:url value="/" var="home"/>
+  <span>
+    <p>Timedesk Beta Release | Copyright © 2011 Timedesk </p>
+  </span>
+</div>

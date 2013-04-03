@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_timedesk_entity_CompanySite" object="${companysite}" path="/sites" z="OfXDTcPBMGWREjkgQN+pu8sS5Jc=">
+        <field:display field="company" id="s_org_timedesk_entity_CompanySite_company" object="${companysite}" z="8iQs3u/hQMrUA9/eyMCxNJt72mo="/>
+        <field:display field="siteId" id="s_org_timedesk_entity_CompanySite_siteId" object="${companysite}" z="+UtH3DIsEUauPK1kuY+v1L53qSE="/>
+        <field:display field="location" id="s_org_timedesk_entity_CompanySite_location" object="${companysite}" z="xGU/59X8ZgO7Esg6pdAfjrH1oOA="/>
+        <field:display field="city" id="s_org_timedesk_entity_CompanySite_city" object="${companysite}" z="kBb9o6qXO0NrKbXkr3ckmuQjQi0="/>
+        <field:display field="country" id="s_org_timedesk_entity_CompanySite_country" object="${companysite}" z="29fV2UwVP0fiDkBWlEr2Sr97gh0="/>
+        <field:display field="employees" id="s_org_timedesk_entity_CompanySite_employees" object="${companysite}" z="8xgua6xq5OTFKyFIZSEXQUXdKaQ="/>
+    </page:show>
+</div>
